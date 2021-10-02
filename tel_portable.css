@@ -31,3 +31,7 @@ section#restauration .restauration_container>a{
 .menu-resto .menu-resto_name{
     justify-content: space-between;
 }
+.menu-resto .menu-resto_name .menu-resto_name_heart{
+    padding: 0;
+    margin:0;
+}
