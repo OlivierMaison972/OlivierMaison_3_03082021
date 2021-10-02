@@ -1,0 +1,547 @@
+@charset "UTF-8";
+li#taste, li#compose, li#choose {
+  border-radius: 20px;
+  width: 280px;
+  margin: 10px 0;
+  padding: 20px;
+  background: #f6f6f6;
+  cursor: pointer;
+}
+li#taste:hover, li#compose:hover, li#choose:hover {
+  background-color: #f5edff;
+  color: #9356DC;
+}
+
+.full-heart {
+  color: transparent;
+  position: relative;
+  top: -20px;
+}
+.full-heart:hover::before {
+  color: #9356DC;
+  transition: all 1.5s;
+}
+
+.full-heart-item {
+  color: transparent;
+  position: relative;
+  left: -34px;
+}
+.full-heart-item:hover {
+  color: #9356DC;
+  transition: all 2s;
+}
+
+div.bas_de_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes item-carte-progress {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animation-check {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-60px);
+  }
+}
+@keyframes anim-icon-check {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-270deg);
+  }
+}
+@keyframes anim-price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+/*main styles*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.logo__Ohmyfood {
+  text-align: center;
+  margin: 20px;
+}
+div.logo__Ohmyfood > img {
+  height: 30px;
+}
+
+.resto_header {
+  display: flex;
+  align-items: center;
+}
+.resto_header a {
+  color: black;
+}
+
+div.logo__Ohmyfood__resto {
+  text-align: center;
+  margin: 20px;
+  width: 100%;
+}
+div.logo__Ohmyfood__resto > img {
+  height: 30px;
+}
+
+/*pour retourner à la page principale*/
+.flg {
+  margin: 20px;
+  font-size: 20px;
+}
+
+/*footer*/
+div.bas_de_page {
+  background-color: #353535;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+div.bas_de_page a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+div.bas_de_page a p {
+  font-size: 15px;
+  padding: 5px 0;
+}
+div.bas_de_page a i {
+  padding-right: 15px;
+}
+div.bas_de_page a > img {
+  height: 25px;
+  color: white;
+}
+
+div.logo__footer {
+  margin-bottom: 20px;
+  filter: invert(1);
+  padding-top: 30px;
+}
+
+/*section accueil*/
+div.location {
+  text-align: center;
+  background: #eaeaea;
+  border-top: 2px solid #cfcfcf;
+  padding: 15px;
+}
+div.location i {
+  font-size: 15px;
+  padding: 0 10px;
+}
+div.location span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div.reservation {
+  display: flex;
+}
+
+div.search {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 50%;
+  background: #f6f6f6;
+}
+div.search h2 {
+  font-size: 25px;
+  margin: 20px;
+}
+div.search p {
+  font-size: 20px;
+  margin: 20px;
+}
+div.search .explore {
+  border-radius: 25px;
+  background: linear-gradient(165deg, #FF79DA, #9356DC);
+  width: 200px;
+  margin: 20px;
+  padding: 15px 0;
+  box-shadow: #cfcfcf 2px 2px 5px;
+}
+div.search .explore span {
+  margin: 20px 0;
+}
+div.search a {
+  color: white;
+  align-self: center;
+}
+
+div.functioning {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+div.functioning h2 {
+  margin: 60px 0 20px;
+  font-size: 25px;
+}
+div.functioning .functioning_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.functioning_container {
+  display: flex;
+}
+.functioning_container .number {
+  width: 25px;
+  height: 25px;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  right: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #9356DC;
+}
+.functioning_container .functioning_container_text {
+  display: flex;
+  align-items: center;
+}
+.functioning_container .functioning_container_text i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+.functioning_container .functioning_container_text span {
+  color: black;
+}
+
+li#choose {
+  box-shadow: #cfcfcf 2px 2px 5px;
+}
+
+li#compose {
+  box-shadow: #cfcfcf 2px 2px 5px;
+}
+
+li#taste {
+  box-shadow: #cfcfcf 2px 2px 5px;
+}
+
+/*section restauration*/
+section#restauration {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+}
+section#restauration h2 {
+  padding: 50px 30px 0 30px;
+}
+section#restauration .restauration_container {
+  display: flex;
+  grid-gap: 20px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  width: 100%;
+  margin: 30px;
+}
+section#restauration .restauration_container > a {
+  color: black;
+  border-radius: 20px;
+  width: calc(25%);
+}
+
+.resto_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_restos {
+  box-sizing: border-box;
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.img_restos > img {
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #1A9778;
+  padding: 10px;
+  margin: 10px;
+  width: 65px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.img_resto1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+}
+
+.img_resto2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+}
+
+.resto_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+.resto_name .resto_name_text {
+  padding: 10px;
+}
+.resto_name .resto_name_text h3, .resto_name .resto_name_text p {
+  font-size: 16px;
+}
+.resto_name .resto_name_heart {
+  font-size: 10px;
+  padding-right: 20px;
+  width: 20px;
+  height: 21px;
+}
+
+.empty-heart:hover {
+  color: transparent;
+}
+
+.menu-resto {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  margin-top: -40px;
+}
+.menu-resto .menu-resto_name {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-resto .menu-resto_name .menu-resto_name_heart {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 30px;
+}
+.menu-resto .menu-resto_name h3 {
+  font-family: "Shrikhand", cursive, sans-serif;
+  font-size: 30px;
+}
+
+.toute_la_carte {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33%));
+  padding-bottom: 50px;
+}
+
+.banniere {
+  display: flex;
+  height: 350px;
+}
+.banniere img {
+  object-fit: cover;
+  width: 100%;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.menu-ligne {
+  border-bottom: solid 4px #99e2d0;
+  width: 40px;
+  margin: -10px 20px 10px;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item-carte-menus {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  position: relative;
+}
+
+.item-carte {
+  display: flex;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: #cfcfcf 2px 2px 5px;
+  padding: 10px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: space-between;
+  background-color: white;
+  animation: item-carte-progress 1s ease-in-out both;
+}
+.item-carte:hover > .animation {
+  animation: animation-check 0.5s ease both;
+}
+.item-carte:hover > .animation > .fa-check-circle {
+  animation: anim-icon-check 0.5s reverse both;
+  color: white;
+  font-size: 20px;
+}
+.item-carte:hover .item-box .item-prix {
+  animation: anim-price 0.5s ease both;
+}
+
+.carte1 {
+  animation-delay: 0.15s;
+}
+
+.carte2 {
+  animation-delay: 0.3s;
+}
+
+.carte3 {
+  animation-delay: 0.45s;
+}
+
+.carte4 {
+  animation-delay: 0.6s;
+}
+
+.carte5 {
+  animation-delay: 0.75s;
+}
+
+.carte6 {
+  animation-delay: 0.9s;
+}
+
+.carte7 {
+  animation-delay: 1.05s;
+}
+
+.carte8 {
+  animation-delay: 1.2s;
+}
+
+.carte9 {
+  animation-delay: 1.35s;
+}
+
+.carte10 {
+  animation-delay: 1.5s;
+}
+
+.item-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.item-box .item-prix {
+  padding-top: 28px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.item-text .main-item-text {
+  font-weight: 800;
+  font-size: 18px;
+}
+.item-text p {
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.animation {
+  display: flex;
+  flex-direction: row;
+  background-color: #99e2d0;
+  height: 75px;
+  width: 60px;
+  margin: -10px -70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.order {
+  border-radius: 25px;
+  background: linear-gradient(165deg, #FF79DA, #9356DC);
+  width: 200px;
+  margin-bottom: 70px;
+  padding: 15px 0;
+  box-shadow: #cfcfcf 2px 2px 5px;
+  text-align: center;
+  align-self: center;
+}
+.order a {
+  color: white;
+}
+.order a span {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

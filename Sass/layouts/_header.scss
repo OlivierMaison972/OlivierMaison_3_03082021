@@ -1,0 +1,33 @@
+// en-tête page principale
+div.logo__Ohmyfood{
+    text-align: center;
+    margin: 20px;
+    >img{
+        height: 30px;
+       
+    }
+}
+.resto_header{
+    display: flex;
+    align-items: center;
+    & a{
+        color:black;
+    }
+}
+
+// en-tête menus
+div.logo__Ohmyfood__resto{
+    text-align: center;
+    margin: 20px;
+    width:100%;
+    >img{
+        height: 30px;
+       
+    }
+}
+
+/*pour retourner à la page principale*/ 
+.flg{
+    margin: 20px;
+    font-size: 20px;
+}    

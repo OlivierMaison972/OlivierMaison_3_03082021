@@ -1,0 +1,33 @@
+/*footer*/
+div.bas_de_page{
+    background-color: #353535;
+    color:white;
+    text-align: center;
+    padding-bottom: 20px;
+    @extend %footer-ext;
+    & a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        
+        & p{
+            font-size: 15px;
+            padding: 5px 0;
+        }
+        & i{
+            padding-right: 15px;
+        }
+        & > img{
+            height: 25px;
+            color:white;
+        }
+    }
+}
+
+div.logo__footer{
+    margin-bottom: 20px;
+    filter: invert(1);
+    padding-top: 30px;
+
+}

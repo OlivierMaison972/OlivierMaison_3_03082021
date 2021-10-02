@@ -1,0 +1,39 @@
+@keyframes item-carte-progress{
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes animation-check{
+    0%{
+        opacity:0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity:1;
+        transform: translateX(-60px);
+
+    }
+}
+
+@keyframes anim-icon-check{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-270deg);
+    }
+    
+}
+@keyframes anim-price{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-60px);
+    }
+}

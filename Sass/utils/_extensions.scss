@@ -1,0 +1,44 @@
+// ombre des boites
+%functioning-box{
+    border-radius: 20px;
+    width: 280px;
+    margin:10px 0;
+    padding:20px;
+    background: $color-fifthiary;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: $color-eighthiary;
+        color: $color-primary; 
+    }
+}
+
+// remplissage des coeurs
+%anim-full-heart{
+    color:transparent;
+    position:relative;
+    top:-20px;
+    &:hover::before{
+
+        color: $color-primary;
+        transition: all 1.5s;
+    }
+}
+// remplissage des coeurs dans les menus
+%anim-heart{
+    color:transparent;
+    position:relative;
+    left:-34px;
+    &:hover {
+        color: $color-primary;
+        transition: all 2s;
+    }
+    
+}
+%footer-ext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

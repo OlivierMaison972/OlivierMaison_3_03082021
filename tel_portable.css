@@ -1,0 +1,33 @@
+div.reservation{
+    display:flex;
+    flex-direction: column;
+}
+div.search{
+    width:100%;
+    padding: 40px 0;
+}
+
+div.functioning h2{
+    margin-left: -160px;
+}
+
+div.functioning{
+    width:100%;
+    margin-top:0;
+    
+}  
+section#restauration .restauration_container{
+    flex-direction: column;
+}    
+section#restauration .restauration_container>a{
+    width:100%;
+}
+    
+.toute_la_carte{
+    display:flex;
+    flex-direction: column;
+}
+
+.menu-resto .menu-resto_name{
+    justify-content: space-between;
+}
