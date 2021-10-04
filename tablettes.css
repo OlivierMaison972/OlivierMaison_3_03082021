@@ -1,0 +1,16 @@
+section#restauration .restauration_container > a {
+    width: calc(100%);
+}
+
+section#restauration .restauration_container {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.toute_la_carte{
+    grid-template-columns: repeat(2, calc(50%));
+}
+
+.carte{
+    margin-bottom: 30px;
+}

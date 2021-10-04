@@ -60,6 +60,7 @@ div.search{
         align-self: center;
     }
 }
+
 div.functioning{
     display: flex;
     flex-direction: column;
@@ -80,7 +81,6 @@ div.functioning{
 
 .functioning_container{
     display:flex;
-
     & .number {
         width: 25px;
         height: 25px;
@@ -108,6 +108,7 @@ div.functioning{
         }
     }
 }
+
 li#choose{
 @extend %functioning-box;
 @include boxing-shadow;
@@ -120,16 +121,15 @@ li#taste{
     @extend %functioning-box;
     @include boxing-shadow;
 }
+
 /*section restauration*/
 section#restauration{
     display:flex;
     flex-wrap:wrap;
-    background-color: $color-fifthiary;
-    
+    background-color: $color-fifthiary;    
     & h2{
         padding: 50px 30px 0 30px;
-    }
-    
+    }    
     & .restauration_container{
         display: flex;
         grid-gap: 20px;
@@ -144,12 +144,12 @@ section#restauration{
         }
     }
 }
+
 .resto_item{
     display: flex;
     flex-direction: column;
 }
 .img_restos{
-    box-sizing: border-box;
     height: 175px;
     border-radius: 20px 20px 0 0;
     width: 100%;
@@ -171,26 +171,14 @@ section#restauration{
     border-radius: 3px;
 }
 
-
-
 .img_resto1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    height: 175px;
-    border-radius: 20px 20px 0 0;
-    background-size: cover;
+   @extend %back-img;
 }
     
 .img_resto2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-    height: 175px;
-    border-radius: 20px 20px 0 0;
-    background-size: cover;
+    @extend %back-img;
+    background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);    
 }
 
 .resto_name{
@@ -199,7 +187,6 @@ section#restauration{
     align-items: center;
     background-color: white;
     border-radius: 0 0 20px 20px;
-
     & .resto_name_text{
         padding: 10px;
         & h3, p{
@@ -213,12 +200,14 @@ section#restauration{
         height:21px;    
     }
 }
+// animation des coeurs
 .empty-heart:hover{
     color:transparent;
 }
 .full-heart{
     @extend %anim-full-heart;
 }
+// animation dans les cartes des restaurants
 .menu-resto{
     display:flex;
     flex-direction: column;
@@ -226,7 +215,6 @@ section#restauration{
     border-radius: 50px 50px 0 0 ;
     position: relative;
     margin-top: -40px;
-
     & .menu-resto_name{
         margin:30px;
         display:flex;
@@ -240,21 +228,14 @@ section#restauration{
             }
         & h3{
             font-family: "Shrikhand", cursive, sans-serif;
-            font-size:30px;
+            font-size:25px;
         }
     }
 }
-
-
 .full-heart-item{
     @extend %anim-heart;
 }
-
-.toute_la_carte{
-    display:grid;
-    grid-template-columns: repeat(3, calc(33%));
-    padding-bottom: 50px;
-}
+// banniere
 .banniere{
     display:flex;
     height:350px;
@@ -267,12 +248,17 @@ h4{
     font-size: 18px;
     margin:0 20px;
 }
+// carte des menus
+.toute_la_carte{
+    display:grid;
+    grid-template-columns: repeat(3, calc(33%));
+    padding-bottom: 50px;
+}
 .menu-ligne{
     border-bottom: solid 4px #99e2d0;
     width: 40px;
     margin: -10px 20px 10px;
 }
-
 .carte{
     display:flex;
     flex-direction: column;
@@ -281,10 +267,7 @@ h4{
 .item-carte-menus{
     display:flex;
     box-sizing: border-box;
-    flex-direction: column;
-    position: relative;
-    
-    
+    flex-direction: column;  
 }
 .item-carte{
     display:flex;
@@ -297,24 +280,21 @@ h4{
     cursor: pointer;
     justify-content: space-between;
     background-color: white;
-    animation: item-carte-progress 1s ease-in-out both;
-    
+    animation: item-carte-progress 1s ease-in-out both;    
     &:hover{
-        & > .animation{
+        & > .anim{
             animation: animation-check 0.5s ease both;
             & > .fa-check-circle{
                 animation: anim-icon-check 0.5s reverse both;
                 color:white;
-                font-size: 20px;
-                
+                font-size: 20px;    
             }
         }
         & .item-box{
             & .item-prix{
                 animation: anim-price 0.5s ease both;
             }
-        }
-        
+        }    
     }
 }
 
@@ -360,7 +340,6 @@ h4{
     }
 }
 
-
 .item-text{
     display: flex;
     flex-direction: column;
@@ -368,8 +347,7 @@ h4{
     overflow: hidden;
     & .main-item-text{
         font-weight:800;
-        font-size: 18px;
-        
+        font-size: 18px;    
     }
     & p{
         font-size: 14px;
@@ -379,8 +357,7 @@ h4{
     }
 }
 
-
-.animation{
+.anim{
     display: flex;
     flex-direction: row;
     background-color: #99e2d0;
@@ -410,5 +387,3 @@ h4{
         }
     }
 }
-
-

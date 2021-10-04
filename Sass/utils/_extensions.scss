@@ -1,3 +1,13 @@
+/* images des menus */
+%back-img{
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+}
+
 // ombre des boites
 %functioning-box{
     border-radius: 20px;
