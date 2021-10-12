@@ -23,6 +23,10 @@
         }
     }
 }
+.empty-heart{
+    position: relative;
+    bottom:10px;
+}
 .full-heart-item{
     @extend %anim-heart;
 }

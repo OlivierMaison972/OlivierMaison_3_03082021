@@ -15,7 +15,7 @@ li#taste:hover, li#compose:hover, li#choose:hover {
 .resto_name .resto_name_heart .full-heart {
   color: transparent;
   position: relative;
-  top: -20px;
+  top: -40px;
 }
 .resto_name .resto_name_heart .full-heart:hover {
   color: #FF79DA;
@@ -113,6 +113,7 @@ div.logo__Ohmyfood > img {
 div.logo__Ohmyfood__resto {
   text-align: center;
   margin: 20px;
+  margin-left: 0;
   width: 100%;
 }
 div.logo__Ohmyfood__resto > img {
@@ -364,10 +365,10 @@ section#restauration .restauration_container a {
   padding: 10px;
 }
 .resto_name .resto_name_text h3, .resto_name .resto_name_text p {
-  font-size: 16px;
+  font-size: 20px;
 }
 .resto_name .resto_name_heart {
-  font-size: 10px;
+  font-size: 15px;
   padding-right: 20px;
   width: 20px;
   height: 21px;
@@ -395,7 +396,12 @@ section#restauration .restauration_container a {
 }
 .menu-resto .menu-resto_name h3 {
   font-family: "Shrikhand", cursive, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.empty-heart {
+  position: relative;
+  bottom: 10px;
 }
 
 .banniere {
@@ -433,35 +439,6 @@ h4 {
 .item-carte-menus {
   display: flex;
   flex-direction: column;
-}
-
-.item-carte {
-  display: flex;
-  position: relative;
-  border-radius: 20px;
-  margin: 10px;
-  box-shadow: #cfcfcf 2px 2px 5px;
-  padding: 10px;
-  height: 50px;
-  overflow: hidden;
-  cursor: pointer;
-  justify-content: space-between;
-  background-color: white;
-  animation: item-carte-progress 1s ease-in-out both;
-}
-.item-carte:hover > .anim {
-  transform: translateX(0);
-}
-.item-carte:hover > .anim > .fa-check-circle {
-  animation: anim-icon-check 0.5s reverse both;
-  color: white;
-  font-size: 20px;
-}
-.item-carte:hover .item-box .item-text {
-  margin-right: 70px;
-}
-.item-carte:hover .item-box .item-prix {
-  transform: translateX(-60px);
 }
 
 .carte1 {
@@ -504,6 +481,35 @@ h4 {
   animation-delay: 1.5s;
 }
 
+.item-carte {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: #cfcfcf 2px 2px 5px;
+  padding: 10px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: space-between;
+  background-color: white;
+  animation: item-carte-progress 1s ease-in-out both;
+}
+.item-carte:hover > .anim {
+  transform: translateX(0);
+}
+.item-carte:hover > .anim > .fa-check-circle {
+  animation: anim-icon-check 0.5s reverse both;
+  color: white;
+  font-size: 20px;
+}
+.item-carte:hover .item-box .item-text {
+  margin-right: 70px;
+}
+.item-carte:hover .item-box .item-prix {
+  transform: translateX(-60px);
+}
+
 .item-box {
   display: flex;
   width: 100%;
@@ -521,14 +527,14 @@ h4 {
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
-  transition: margin-right 0.5s ease-out;
+  transition: margin-right 0.5s ease;
 }
 .item-text .main-item-text {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
 }
 .item-text p {
-  font-size: 14px;
+  font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
