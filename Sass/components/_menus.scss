@@ -23,10 +23,7 @@
         }
     }
 }
-.empty-heart{
-    position: relative;
-    bottom:10px;
-}
+
 .full-heart-item{
     @extend %anim-heart;
 }
@@ -63,36 +60,7 @@ h4{
     display:flex;
     flex-direction: column;  
 }
-.carte1{
-    animation-delay: $anim-time;
-} 
-.carte2{
-    animation-delay: $anim-time*2;
-}
-.carte3{
-    animation-delay: $anim-time*3;
-}
-.carte4{
-    animation-delay: $anim-time*4;
-}
-.carte5{
-    animation-delay: $anim-time*5;
-}
-.carte6{
-    animation-delay: $anim-time*6;
-}
-.carte7{
-    animation-delay: $anim-time*7;
-}
-.carte8{
-    animation-delay: $anim-time*8;
-}
-.carte9{
-    animation-delay: $anim-time*9;
-}
-.carte10{
-    animation-delay: $anim-time*10;
-}
+
 
 .item-carte{
     display:flex;
@@ -126,6 +94,36 @@ h4{
             }
         }    
     }   
+}
+.carte1{
+    animation-delay: $anim-time;
+} 
+.carte2{
+    animation-delay: $anim-time*2;
+}
+.carte3{
+    animation-delay: $anim-time*3;
+}
+.carte4{
+    animation-delay: $anim-time*4;
+}
+.carte5{
+    animation-delay: $anim-time*5;
+}
+.carte6{
+    animation-delay: $anim-time*6;
+}
+.carte7{
+    animation-delay: $anim-time*7;
+}
+.carte8{
+    animation-delay: $anim-time*8;
+}
+.carte9{
+    animation-delay: $anim-time*9;
+}
+.carte10{
+    animation-delay: $anim-time*10;
 }
 
 .item-box{
