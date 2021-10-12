@@ -1,0 +1,114 @@
+/*section accueil*/
+div.location{
+    text-align: center;
+    background: $color-seveniary;
+    border-top: 2px solid $color-sixthiary;
+    padding: 15px;
+    & i{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    & span{
+        font-size: 15px;
+        font-weight: bold;
+    }   
+}
+div.reservation{
+    display:flex;
+}
+
+div.search{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    width:50%;
+    background: $color-fifthiary;
+    & h2{
+        font-size: 25px;
+        margin:20px;
+    }
+    & p{
+        font-size: 20px;
+        margin:20px;
+    }
+    & .explore{
+        border-radius: 25px;
+        background: $color-gradient;
+        width: 200px;
+        padding: 15px 0;
+        @include boxing-shadow;
+        &:hover{
+            @extend %relief;
+        }
+        & span{
+            margin: 20px 0;
+        }
+    }
+    & a{
+        margin: 20px;
+        color: white;
+        align-self: center;
+    }
+}
+
+div.functioning{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:50%;
+    & h2{
+        margin: 60px 0 20px;
+        font-size: 25px;
+    }
+    & .functioning_list{
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+.functioning_container{
+    display:flex;
+    & .number {
+        width: 25px;
+        height: 25px;
+        color: white;
+        font-size: 14px;
+        position: relative;
+        right: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background-color:$color-primary;
+    } 
+    & .functioning_container_text{
+        display:flex;
+        align-items: center;
+        & i{
+            margin-right: 20px;
+            font-size:18px;
+            
+        }
+        & span{
+            color:black;
+        }
+    }
+}
+
+li#choose{
+@extend %functioning-box;
+@include boxing-shadow;
+}
+li#compose{
+    @extend %functioning-box;
+    @include boxing-shadow;
+}
+li#taste{
+    @extend %functioning-box;
+    @include boxing-shadow;
+}

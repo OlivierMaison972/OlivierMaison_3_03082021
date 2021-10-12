@@ -19,7 +19,7 @@ div.functioning{
 section#restauration .restauration_container{
     flex-direction: column;
 }    
-section#restauration .restauration_container>a{
+section#restauration .restauration_container .resto{
     width:100%;
 }
     

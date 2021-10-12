@@ -8,17 +8,6 @@
         opacity: 1;
     }
 }
-@keyframes animation-check{
-    0%{
-        opacity:0;
-        transform: translateX(0);
-    }
-    100% {
-        opacity:1;
-        transform: translateX(-60px);
-
-    }
-}
 
 @keyframes anim-icon-check{
     0%{
@@ -29,11 +18,22 @@
     }
     
 }
-@keyframes anim-price{
+/*animation du loader*/
+@keyframes loading{
+    from {
+        transform: rotate(0deg);
+        }
+    to {
+        transform: rotate(360deg);
+        }
+}
+@keyframes loader{
     0%{
-        transform: translateX(0);
+        background-color: white;
+        opacity: 1;
     }
     100%{
-        transform: translateX(-60px);
+        opacity: 0;
+        z-index: -1;
     }
 }

@@ -1,4 +1,4 @@
-section#restauration .restauration_container > a {
+section#restauration .restauration_container .resto{
     width: calc(100%);
 }
 

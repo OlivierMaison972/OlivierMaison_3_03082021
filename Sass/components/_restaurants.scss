@@ -1,0 +1,79 @@
+/*section restauration*/
+section#restauration{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: $color-fifthiary;    
+    & h2{
+        padding: 50px 30px 0 30px;
+    }    
+    & .restauration_container{
+        display: flex;
+        grid-gap: 20px;
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        width: 100%;
+        margin: 30px;
+        & .resto{
+            width: calc(25%);
+        }
+        & a{
+            color: black;
+            border-radius: 20px;
+        }
+    }
+}
+
+.resto_item{
+    display: flex;
+    flex-direction: column;
+}
+.img_restos{
+    height: 175px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    position: relative;
+    & > img{
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+}
+.new{
+    background-color: #99E2D0;
+    color: #1A9778;
+    padding: 10px;
+    margin: 10px;
+    width:65px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.resto_name{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    & .resto_name_text{
+        padding: 10px;
+        & h3, p{
+            font-size:16px;
+        }
+    }
+    & .resto_name_heart{
+        font-size: 10px;
+        padding-right: 20px;
+        width: 20px;
+        height:21px;
+        /*animation des coeurs*/
+        & .full-heart{
+            @extend %anim-full-heart;
+            
+        }
+    }
+}

@@ -1,13 +1,3 @@
-/* images des menus */
-%back-img{
-    height: 175px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    border-radius: 20px 20px 0 0;
-    background-size: cover;
-}
-
 // ombre des boites
 %functioning-box{
     border-radius: 20px;
@@ -28,27 +18,34 @@
     color:transparent;
     position:relative;
     top:-20px;
-    &:hover::before{
-
-        color: $color-primary;
-        transition: all 1.5s;
+    &:hover{
+        color: $color-secondary;
+        transition: all 1.5s;    
     }
 }
+
 // remplissage des coeurs dans les menus
 %anim-heart{
     color:transparent;
     position:relative;
     left:-34px;
     &:hover {
-        color: $color-primary;
-        transition: all 2s;
-    }
-    
+        color: $color-secondary;
+        transition: all 1.5s;
+    }    
 }
+
 %footer-ext{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
+}
+
+// survol des boutons "explorer nos restaurants" et "commander"
+%relief{ 
+    background-color: $color-eighthiary;
+    filter: brightness(1.2);
+    @include boxing-shadow-secondary;
+    transition: box-shadow 0.5s;
 }
