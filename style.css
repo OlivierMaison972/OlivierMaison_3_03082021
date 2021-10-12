@@ -374,6 +374,10 @@ section#restauration .restauration_container a {
   height: 21px;
   /*animation des coeurs*/
 }
+.resto_name .resto_name_heart .empty-heart {
+  position: relative;
+  bottom: 10px;
+}
 .menu-resto {
   display: flex;
   flex-direction: column;
@@ -397,11 +401,6 @@ section#restauration .restauration_container a {
 .menu-resto .menu-resto_name h3 {
   font-family: "Shrikhand", cursive, sans-serif;
   font-size: 30px;
-}
-
-.empty-heart {
-  position: relative;
-  bottom: 10px;
 }
 
 .banniere {
@@ -439,6 +438,35 @@ h4 {
 .item-carte-menus {
   display: flex;
   flex-direction: column;
+}
+
+.item-carte {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: #cfcfcf 2px 2px 5px;
+  padding: 10px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: space-between;
+  background-color: white;
+  animation: item-carte-progress 1s ease-in-out both;
+}
+.item-carte:hover > .anim {
+  transform: translateX(0);
+}
+.item-carte:hover > .anim > .fa-check-circle {
+  animation: anim-icon-check 0.5s reverse both;
+  color: white;
+  font-size: 20px;
+}
+.item-carte:hover .item-box .item-text {
+  margin-right: 70px;
+}
+.item-carte:hover .item-box .item-prix {
+  transform: translateX(-60px);
 }
 
 .carte1 {
@@ -479,35 +507,6 @@ h4 {
 
 .carte10 {
   animation-delay: 1.5s;
-}
-
-.item-carte {
-  display: flex;
-  position: relative;
-  border-radius: 20px;
-  margin: 10px;
-  box-shadow: #cfcfcf 2px 2px 5px;
-  padding: 10px;
-  height: 50px;
-  overflow: hidden;
-  cursor: pointer;
-  justify-content: space-between;
-  background-color: white;
-  animation: item-carte-progress 1s ease-in-out both;
-}
-.item-carte:hover > .anim {
-  transform: translateX(0);
-}
-.item-carte:hover > .anim > .fa-check-circle {
-  animation: anim-icon-check 0.5s reverse both;
-  color: white;
-  font-size: 20px;
-}
-.item-carte:hover .item-box .item-text {
-  margin-right: 70px;
-}
-.item-carte:hover .item-box .item-prix {
-  transform: translateX(-60px);
 }
 
 .item-box {

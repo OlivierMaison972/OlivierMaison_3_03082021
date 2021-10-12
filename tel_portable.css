@@ -22,7 +22,9 @@ section#restauration .restauration_container{
 section#restauration .restauration_container .resto{
     width:100%;
 }
-    
+.menu-resto .menu-resto_name h3{
+    font-size: 25px;
+}    
 .toute_la_carte{
     display:flex;
     flex-direction: column;

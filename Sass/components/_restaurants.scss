@@ -71,6 +71,10 @@ section#restauration{
         width: 20px;
         height:21px;
         /*animation des coeurs*/
+        & .empty-heart{
+            position: relative;
+            bottom:10px;
+        }
         & .full-heart{
             @extend %anim-full-heart;
             
