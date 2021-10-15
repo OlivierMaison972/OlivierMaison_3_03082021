@@ -72,12 +72,11 @@ section#restauration{
         height:21px;
         /*animation des coeurs*/
         & .empty-heart{
-            position: relative;
+            position:relative;
             bottom:10px;
-        }
+        }    
         & .full-heart{
             @extend %anim-full-heart;
-            
-        }
+        }                      
     }
 }

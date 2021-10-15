@@ -18,8 +18,10 @@ li#taste:hover, li#compose:hover, li#choose:hover {
   top: -40px;
 }
 .resto_name .resto_name_heart .full-heart:hover {
-  color: #FF79DA;
-  transition: all 1.5s;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: heart 2s ease;
 }
 
 .full-heart-item {
@@ -28,8 +30,10 @@ li#taste:hover, li#compose:hover, li#choose:hover {
   left: -34px;
 }
 .full-heart-item:hover {
-  color: #FF79DA;
-  transition: all 1.5s;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: heart 2s ease;
 }
 
 div.bas_de_page {
@@ -81,6 +85,14 @@ div.bas_de_page {
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*main styles*/
@@ -227,7 +239,7 @@ div.search .explore {
   background: linear-gradient(165deg, #FF79DA, #9356DC);
   width: 200px;
   padding: 15px 0;
-  box-shadow: #cfcfcf 2px 2px 5px;
+  box-shadow: #cfcfcf 3px 3px 5px;
 }
 div.search .explore span {
   margin: 20px 0;
@@ -286,15 +298,15 @@ div.functioning .functioning_list {
 }
 
 li#choose {
-  box-shadow: #cfcfcf 2px 2px 5px;
+  box-shadow: #cfcfcf 3px 3px 5px;
 }
 
 li#compose {
-  box-shadow: #cfcfcf 2px 2px 5px;
+  box-shadow: #cfcfcf 3px 3px 5px;
 }
 
 li#taste {
-  box-shadow: #cfcfcf 2px 2px 5px;
+  box-shadow: #cfcfcf 3px 3px 5px;
 }
 
 /*section restauration*/
@@ -445,7 +457,7 @@ h4 {
   position: relative;
   border-radius: 20px;
   margin: 10px;
-  box-shadow: #cfcfcf 2px 2px 5px;
+  box-shadow: #cfcfcf 3px 3px 5px;
   padding: 10px;
   height: 50px;
   overflow: hidden;
@@ -562,7 +574,7 @@ h4 {
   width: 200px;
   margin-bottom: 70px;
   padding: 15px 0;
-  box-shadow: #cfcfcf 2px 2px 5px;
+  box-shadow: #cfcfcf 3px 3px 5px;
   text-align: center;
   align-self: center;
   cursor: pointer;
