@@ -19,19 +19,24 @@
     position:relative;
     top:-40px;
     &:hover{
-        color: $color-secondary;
-        transition: all 1.5s;    
+        background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: heart 2s ease;
     }
-}
+}    
 
 // remplissage des coeurs dans les menus
 %anim-heart{
     color:transparent;
     position:relative;
     left:-34px;
+    
     &:hover {
-        color: $color-secondary;
-        transition: all 1.5s;
+        background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: heart 2s ease;
     }    
 }
 
